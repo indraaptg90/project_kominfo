@@ -3,7 +3,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "admin" && password === "admin123") {
+    if (username === "admin", "masyita" && password === "admin123", "caca123") {
         localStorage.setItem("isLoggedIn", true); // Simpan status login
         alert("Login berhasil! Anda akan dialihkan ke dashboard.");
         window.location.href = "dashboard.html"; // Alihkan ke dashboard
