@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistem Pembayaran Sampah</title>
+    <link rel="stylesheet" href="styledashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dashboard Pengguna</h1>
+            <nav>
+                <ul>
+                    <li><a href="#pembayaran">Pembayaran</a></li>
+                    <li><a href="index.html" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="pembayaran" class="payment-section">
+        <div class="container">
+            <h2>Pembayaran Iuran Sampah</h2>
+            <form id="paymentForm">
+                <div class="input-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="input-group">
+                    <label for="jumlah">Jumlah Pembayaran (Rp):</label>
+                    <input type="number" id="jumlah" name="jumlah" required>
+                </div>
+                <div class="input-group">
+                    <label for="metode">Metode Pembayaran:</label>
+                    <select id="metode" name="metode" required>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="tunai">Tunai</option>
+                        <option value="e-wallet">E-Wallet</option>
+                    </select>
+                </div>
+                <button type="submit" class="payment-button">Bayar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sistem Pembayaran Sampah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

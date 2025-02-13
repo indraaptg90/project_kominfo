@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pembayaran Sampah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SPS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#info">Informasi</a></li>
+                    <li><a href="#laporan">Laporan</a></li>
+                    <li><a href="login.html" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Selamat Datang di Sistem Pembayaran Sampah</h2>
+            <p>Kelola pembayaran sampah Anda dengan mudah dan efisien.</p>
+        </div>
+    </section>
+
+    <section id="info" class="info-section">
+        <div class="container">
+            <h2>Informasi Sampah</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Jadwal Pengutipan Sampah</h3>
+                    <p>Senin - Jumat: 08.00 - 12.00</p>
+                </div>
+                <div class="info-card">
+                    <h3>Jenis-Jenis Sampah</h3>
+                    <ul>
+                        <li>Organik</li>
+                        <li>Anorganik</li>
+                        <li>B3 (Bahan Berbahaya dan Beracun)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>Harga Sampah</h3>
+                    <ul>
+                        <li>Organik: Rp 5.000/kg</li>
+                        <li>Anorganik: Rp 3.000/kg</li>
+                        <li>B3: Rp 10.000/kg</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="laporan" class="report-section">
+        <div class="container">
+            <h2>Laporan Pengutipan Sampah</h2>
+            <table id="reportTable">
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Jenis Sampah</th>
+                        <th>Berat (kg)</th>
+                        <th>Total Biaya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data laporan akan dimasukkan di sini -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sistem Pembayaran Sampah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
